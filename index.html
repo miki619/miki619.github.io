@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="MikiHARADA" />
+    <link rel="stylesheet" href="css/final.css">
+    <title>プログラミング最終課題</title>
+</head>
+
+<body>
+    <header>
+        <h1>性格診断</h1>
+    </header>
+
+    <p>もしあなたが吹奏楽部に入るとしたら、どの楽器を選びますか？<br>その選択からあなたの性格がわかるかも、、、</p>
+
+    <div>
+        <h2>楽器一覧</h2>
+
+        <div>
+            <h3>クラリネット</h3>
+            <img src="image/cl.jpg" alt="クラリネット" width="300" height="300">
+        </div>
+        <div>
+            <h3>サックス</h3>
+            <img src="image/sax.jpg" alt="サックス" width="300" height="300">
+        </div>
+        <div>
+            <h3>フルート</h3>
+            <img src="image/fl.jpg" alt="フルート" width="300" height="300">
+        </div>
+        <div>
+            <h3>トランペット</h3>
+            <img src="image/tp.jpg" alt="トランペット" width="350" height="259">
+        </div>
+        <div>
+            <h3>パーカッション</h3>
+            <img src="image/perc.png" alt="パーカッション" width="300" height="300">
+        </div>
+    </div>
+    <div>
+        <h2>あなたはどの楽器？</h2>
+        <button type="button" onclick="music(1)">クラリネット</button>
+        <button type="button" onclick="music(2)">サックス</button>
+        <button type="button" onclick="music(3)">フルート</button>
+        <button type="button" onclick="music(4)">トランペット</button>
+        <button type="button" onclick="music(5)">パーカッション</button>
+    </div>
+
+    <div>
+        <h2>診断結果</h2>
+        <p>あなたの性格は・・・</p>
+        <p id="result"></p>
+    </div>
+
+
+
+    <div>
+        <h2>お問い合わせ</h2>
+        <p>ご意見等ありましたらこちらからお問い合わせください。</p>
+
+        <form action="#" method="get">
+
+            <p>
+                <label for="name">お名前：</label>
+                <input type="text" name="name" id="last-name" required />
+            </p>
+            <p>
+                <label>
+                    メールアドレス：
+                    <input type="email" />
+                </label>
+            </p>
+            <p>
+                <label for="opinion">ご意見等：</label><br>
+                <textarea id="opinion" name="opinion" rows="8" cols="60"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="送信する" />
+                <input type="reset" value="リセット" />
+            </p>
+        </form>
+
+    </div>
+
+    <footer>
+        Copyright &copy; MikiHARADA. All Rights Reserved.</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/final.test.js"></script>
+
+</body></html>
